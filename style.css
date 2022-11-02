@@ -5,11 +5,21 @@
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
     padding: 6rem;
 }
 
-#map {
+.Galerii {
     width: 100%;
+    background-color: aliceblue;
+    overflow: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.Galerii > img {
     height: 400px;
-    background-color: gray;
 }
