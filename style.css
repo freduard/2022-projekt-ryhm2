@@ -24,4 +24,7 @@ footer {
     .imgDiv {
         display: none;
     }
+    footer {
+        text-align: center;
+    }
 }
