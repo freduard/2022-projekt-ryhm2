@@ -36,3 +36,9 @@ h1 {
 .Galerii > img {
     height: 400px;
 }
+
+@media screen and (max-width: 1024px) {
+    .Galerii > img {
+        height: 200px;
+    }
+}
