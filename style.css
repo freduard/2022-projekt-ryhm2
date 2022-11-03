@@ -46,11 +46,6 @@ header {
     background-color:#14468A;    
 }
 
-h1 {
-    padding: 1rem;
-    text-align: center;
-}
-
 h2{
     padding: 1rem;
     text-align: center;
@@ -63,12 +58,12 @@ h2{
 .button {
     background-color: white;
     padding: 5px;
-    border-radius: 8px;
+    border-radius: 6px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 120px;
-    height: 40px;
-    font-size: 1em;
-    margin-right: 15px;
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    margin-right: 12px;
     border: 1px solid #14468A;
     color: black;
 }
