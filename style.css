@@ -21,23 +21,3 @@
 h1 {
     font-size: 60px;
     margin-bottom: 1rem;
-
-.gcontainer {
-    display: flex;
-    flex-direction: column;
-    background-color: antiquewhite;
-    padding: 6rem;
-}
-
-.Galerii {
-    width: 100%;
-    background-color: aliceblue;
-    overflow: scroll;
-    overflow-y: hidden;
-    display: flex;
-    flex-direction: row;
-}
-
-.Galerii > img {
-    height: 400px;
-}
