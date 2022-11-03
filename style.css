@@ -1,5 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+.container {
+    margin-top: 100px;
+    padding: 1rem;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+    background-color:#14468A;
+    
+}
+
+h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.button {
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 120px;
+    height: 40px;
+    font-size: 1em;
+    margin-right: 15px;
+    border: 1px solid #14468A;
+    color: black;
+}
+
+.changes{
+    color: black;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: rgb(234, 142, 23);
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.changes:hover{
+    color:white;
+}
+
+.first-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+    display: grid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.625rem;
+    width: 60%;
+    gap: 10px;
+    text-align: left;
+    font-size: medium;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Secondbox {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 8px;
+}
+
+.innerdiv {
+    display: flex;
+}
+
+.innerdiv > img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.innerdiv > ul {
+    width: 60%;
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+    background-color: #14468a;
+    text-align: right;
+    padding:10px;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
 .Galerii {
     width: 100%;
     overflow: scroll;
@@ -13,8 +127,36 @@
     height: 400px;
 }
 
+
+    
+
 @media screen and (max-width: 1024px) {
+    .first-box{
+        display: flex;
+        flex-direction: column;
+    }
+
     .Galerii > img {
         height: 200px;
     }
+
+    footer {
+        text-align: center;
+    }
+
+    .innerdiv {
+        flex-direction: column;
+    }
+
+    .innerdiv > ul {
+        width: 100%;
+    }
+
+    .innerdiv > img {
+        width: 100%;
+    }
+}
+.line {
+    margin-bottom: 15px;
+    background-color: grey;
 }
