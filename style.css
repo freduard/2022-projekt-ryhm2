@@ -14,8 +14,8 @@ header {
     
 }
 
-button {
-    background-color: lightgray;
+.button {
+    background-color: white;
     padding: 5px;
     border-radius: 8px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -24,6 +24,22 @@ button {
     font-size: 1em;
     margin-right: 15px;
     border: 1px solid #14468A;
+    color: black;
+}
 
+.changes{
+    color: black;
+    text-decoration: none;
+}
 
+.button:hover{
+    background-color: rgb(234, 142, 23);
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.changes:hover{
+    color:white;
 }
