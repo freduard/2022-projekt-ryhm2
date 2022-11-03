@@ -63,4 +63,7 @@ header{
         height: 400px;
         background-color: gray;
     }
+    .container {
+        padding: 2rem;
+    }
 }
