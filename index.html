@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8daf6e3169.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Content</title>
 </head>
 <header>
     <img src="unnamed.png" style="height: 100px; margin-left: 1rem;"  alt="Kuressaare Ametikool Logo">
 
-    <div style="display:flex; justify-content: space-evenly; margin-right: 1rem;" >
-
-        <button class="button">
+    <div class="headerLinks">
+        <button class="button"">
             <a class="changes" href="/index.html">Avaleht</a>
         </button>
         <button class="button">
@@ -21,7 +21,23 @@
         <button class="button">
             <a class="changes" href="/galerii.html">Galerii</a>
         </button>
-
+    </div>
+    <div class="mobileMenu">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="checkBtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="mobileLinks">
+            <button class="button">
+                <a class="changes" href="/index.html">Avaleht</a>
+            </button>
+            <button class="button">
+                <a class="changes" href="/kontaktid.html">Kontakt</a>
+            </button>
+            <button class="button">
+                <a class="changes" href="/galerii.html">Galerii</a>
+            </button>
+        </div>
     </div>
 </header>
 <body>

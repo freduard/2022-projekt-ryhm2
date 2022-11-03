@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
 }
 
 #map {
@@ -31,9 +35,10 @@
 }
 
 .icontainer{
-    background-color: #f8f8f8;
-    margin-top: 0 auto;
-    padding: 3rem;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -50,27 +55,30 @@ h2{
     padding: 1rem;
     text-align: center;
     color: #000000;
-    font-size: 22px;
+    font-size: 32px;
     font-family: sans-serif;
     text-transform: uppercase;
 }
 
 .button {
     background-color: white;
-    padding: 5px;
     border-radius: 6px;
     font-family: sans-serif;
     width: 90px;
     height: 30px;
     font-size: 14px;
     margin-right: 12px;
-    border: 1px solid #14468A;
+    border: none;
     color: black;
 }
 
 .changes{
     color: black;
     text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button:hover{
@@ -81,28 +89,15 @@ h2{
     cursor: pointer;
 }
 
-.changes:hover{
-    color:white;
+.button:hover > a {
+    transition: 0.5s;
+    color: white;
 }
 
 .first-box{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    font-family: sans-serif;
-}
-
-ul {
-    display: grid;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0.625rem;
-    width: 60%;
-    gap: 10px;
-    font-size: medium;
-    text-align: center;
     font-family: sans-serif;
 }
 
@@ -114,19 +109,25 @@ ul {
 
 .innerdiv {
     display: flex;
+    gap: 1rem;
 }
 
 .innerdiv > img {
     width: 40%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .innerdiv > ul {
     width: 60%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 footer {
+    margin-top: 2rem;
     width: 100%;
     background-color: #14468a;
     text-align: right;
@@ -137,6 +138,47 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
+.checkBtn {
+    font-size: 30px;
+    color: white;
+    margin-right: 2rem;
+}
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked ~ div {
+    max-height: 200px;
+    transition: max-height 0.5s ease-in;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.mobileLinks {
+    background: #14468a;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    max-height: 0px;
+    top: 100px;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobileLinks > button {
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    width: 50%;
+    font-size: 18px;
+}
+
 .Galerii {
     width: 100%;
     overflow: scroll;
@@ -155,7 +197,20 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 8px;
 }
-    
+
+.headerLinks {
+    display:flex; 
+    justify-content: space-evenly; 
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+    .Kontaktid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .first-box{
@@ -163,11 +218,18 @@ footer {
         flex-direction: column;
     }
 
-    .Kontaktid {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    .mobileMenu {
+        display: block;
     }
+
+    .gCont {
+        min-height: 80vh;
+    }
+
+    .headerLinks {
+        display: none;
+    }
+
     #map {
         width: 100%;
         height: 400px;
@@ -175,11 +237,12 @@ footer {
     }
 
     .Galerii > img {
-        height: 200px;
+        height: 300px;
     }
 
     footer {
         text-align: center;
+        margin-top: 1rem;
     }
 
     .innerdiv {
@@ -192,6 +255,22 @@ footer {
 
     .innerdiv > img {
         width: 100%;
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    .icontainer { 
+        padding: 2rem;
+    }
+
+    .imgDiv {
+        display: none;
+    }
+
+    h2 {
+        font-size: 24px;
     }
 }
 .line {
