@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -24,6 +24,11 @@ header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
     background-color:#14468A;
     
+}
+
+h1 {
+    padding: 1rem;
+    text-align: center;
 }
 
 .button {
@@ -56,17 +61,68 @@ header {
     color:white;
 }
 
-h1 {
-    padding: 1rem;
-    text-align: center;
-}
 .first-box{
-    margin: auto;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    column-gap: 50px;
-    column-count: 3;
-    grid-gap: 10px;
+    gap: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+ul {
+    display: grid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.625rem;
+    width: 60%;
+    gap: 10px;
+    text-align: left;
+    font-size: medium;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Secondbox {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 8px;
+}
+
+.innerdiv {
+    display: flex;
+}
+
+.innerdiv > img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.innerdiv > ul {
+    width: 60%;
+    text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+    .first-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .innerdiv {
+        flex-direction: column;
+    }
+
+    .innerdiv > ul {
+        width: 100%;
+    }
+
+    .innerdiv > img {
+        width: 100%;
+    }
+}
+
+.line {
+    margin-bottom: 15px;
+    background-color: grey;
 }
